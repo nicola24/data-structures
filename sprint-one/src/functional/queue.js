@@ -13,7 +13,7 @@ var Queue = function() {
   };
 
   someInstance.dequeue = function() {
-    if (someInstance.size(storage[count]) === 0 ) {
+    if (count === 0 ) {
       return 0;  
     }
     var result = storage[tracker];
