@@ -16,7 +16,7 @@ var Stack = function() {
       return 0;
     }
     delete storage[count];
-    count --;
+    count--;
     return storage[count];
   };
 
