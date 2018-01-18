@@ -28,7 +28,6 @@ var queueMethods = {
     this.count--;
     this.tracker++;
     return tempStorage;
-    
   },
 
   size: function() {

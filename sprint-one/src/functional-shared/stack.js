@@ -10,8 +10,6 @@ debugger;
   return newInstance;
 };  
 
-
-
 var stackMethods = {
   push: function(value) {
     this.storage[this.count] = value;
