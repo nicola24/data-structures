@@ -4,7 +4,6 @@ var Queue = function() {
   obj.storage = {};
   obj.count = 0; 
   obj.tracker = 0;
-  
   return obj;
 };
 
