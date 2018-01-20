@@ -21,25 +21,26 @@ var treeMethods = {
 
   contains: function(target) {
     console.log(`we are looking for ${target}`);
-  //takes any input and returns a boolean 
-  //reflecting whether it can be found as the value of the target node or any descendant node
-  //iterate through on the parent (object) level and search for value 
-  //iterate through on the children (array) level and search for value
+    //takes any input and returns a boolean 
+    //reflecting whether it can be found as the value of the target node or any descendant node
+    //iterate through on the parent (object) level and search for value 
+    //iterate through on the children (array) level and search for value
     //if value === target return true ..base case 
     //needs to be done recursively
     var returner = false;
-    var recurser = function(currentNode) {
+    var recurser = function(currentNode) { //recursive function here
       if (currentNode.value === target) {
-        returner = true;
+        returner = true; // lines 32 and 33 constitute our base case
       } else {
-        for (var i = 0; i < currentNode.children.length; i++) {
-          recurser(currentNode.children[i]);
+        for (var i = 0; i < currentNode.children.length; i++) { //access our children array
+          recurser(currentNode.children[i]); //pass in this condition to our recursive function
         }
       }
     };
     recurser(this);
     return returner;
   }
+  
 };
     
   //   };
