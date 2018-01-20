@@ -43,26 +43,6 @@ var treeMethods = {
   
 };
     
-  //   };
-
-  //   for (var key in this.newTree) {
-  //     if (this.newTree[key].value === target) {
-  //       return true;          
-  //     } 
-  //   }
-  //   for (var i = 0; i < this.children.length; i++) {
-  //     if (this.children[i].value === target) {
-  //       return true;      
-  //     }   
-  //   }
-  //   return false;
-  // }
-
-// };
-
-
-
-
 /*
  * Complexity: What is the time complexity of the above functions?
  */
