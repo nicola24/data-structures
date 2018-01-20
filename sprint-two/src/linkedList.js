@@ -1,5 +1,4 @@
 var LinkedList = function() {
-  debugger;
   //Create an empty list
   var list = {};
   list.head = null;
